@@ -37,5 +37,15 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var audioPlayer = document.getElementById('audio-player');
+        var clickMe = document.querySelector('.title');
+    
+        clickMe.addEventListener('click', function() {
+            audioPlayer.play();
+        });
+    });
+  </script>
 </body>
 </html>
